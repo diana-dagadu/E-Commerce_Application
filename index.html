@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard Vines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ecommerce_icon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+
+    <!--  Nav bar -->
+    <div class="nav-bar">
+        <div class="pic">
+            <a href="/index.html"><img src="../images/logo@2.6x.png"></a>
+            
+        </div>
+        <ul>
+            <li><a href="#">NEW</a> </li>
+            <li><a href="#">MEN</a> </li>
+            <li><a href="#">WOMEN</a> </li>
+            <li><a href="#">BOYS</a> </li>
+            <li><a href="#">GIRLS</a> </li>
+            <li><a href="#">MORE SIZES</a> </li>
+            <li><a href="#">TIES</a> </li>
+            <li><a href="#">SALE</a> </li>
+            <li><a href="#">MORE</a> </li>
+            <li>
+                <div class="box">
+                    <input type="text" class="txt" placeholder="Type here">
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </li>
+            <li>
+                <button class="click" onclick="hide()">
+                    <img src="images/nav-icon.svg">
+                    <put>(<pin id="bagie">1</pin>)</put>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!--  Main container -->
+    <div class="main-container">
+
+        <!--  Left of container  -->
+        <div class="left">
+            <div class="left-grid-items"> <img class="grid" src="images/img-grid-1.jpg" alt=""></div>
+            <div class="left-grid-items"><img class="grid" src="images/img-grid-2.jpg" alt=""></div>
+            <div class="left-grid-items"><img class="grid" src="images/img-grid-3.jpg" alt=""></div>
+            <div class="left-grid-items"><img class="grid" src="images/img-grid-4.jpg" alt=""></div>
+            <div class="left-grid-items"><img class="grid" src="images/img-grid-5.jpg" alt=""></div>
+        </div>
+
+        <!--  Middle of container  -->
+        <div class="center"> <img class="main-image" src="images/Zip-Shep-Shirt.jpg" alt="Zip Shep Shirt"></div>
+
+
+        <!-- Right of container  -->
+        <div class="right">
+            <h2 id="title">Dreamcloth Color-Blocked Half-Zip Shep Shirt</h2>
+            <span><i class="zmdi zmdi-star"></i></span>
+            <span><i class="zmdi zmdi-star"></i></span>
+            <span><i class="zmdi zmdi-star"></i></span>
+            <span><i class="zmdi zmdi-star"></i></span>
+            <span><i class="zmdi zmdi-star"></i></span>
+            <br>
+            <p class="pp">No Reviews</p>
+            <p class="pp"><u>Write the First Review</u></p>
+            <br>
+            <p class="pp"><span>FREE GROUND SHIPPING</span> on all orders over $125</p>
+
+            <div class="cost"><p>$</p><p id="price">138.00</p></div>
+
+            <p class="pp"><strong>Color:</strong> Deep Bay</p>
+            <br>
+
+            <div id="circle"></div>
+
+            <p class="pp"><strong>Size:</strong>S</p>
+            <p class="pp"><u>Size Chart</u></p>
+
+            <div class="inner-grid">
+                <div class="boxes">XXS</div>
+                <div class="boxes">XS</div>
+                <div class="boxes">S</div>
+                <div class="boxes">M</div>
+                <div class="boxes">L</div>
+                <div class="boxes">XL</div>
+            </div>
+
+            <p id="in-stock"> 7 In Stock</p>
+
+            <div class="shapes">
+                <div id="circle1">-</div>
+                <div id="rectangle">1</div>
+                <div id="circle2">+</div>
+            </div>
+
+                <div id="rectangle2">ADD TO BAG</div>
+
+            <div id="rectangle3">Buying online, free in-store pick up
+                <br>
+                <p class="dd">Get it at a store near you.</p>
+                <p class="dd"><u>Choose store</u></p>
+
+            </div>
+            <p id="delivery"><strong>Same Day Delivery</strong>-Check Availability</p>
+
+
+            <div class="paymentoptions bfx-remove-element">
+                <p class="paymentoptions_accept">
+                    <img src="images/pay-paypal.png">
+                    <img src="images/pay-amazon.png">
+                    <img src="images/pay-applepay.png">
+                </p>
+            </div>
+            <div class="product-afterpay-message">
+                <span class="afterpay-link" title="Afterpay Terms &amp; Conditions">
+                    <span id="payments">or 4 payments of $34.50 by</span>
+                    <span class="afterpay-logo"><img class="afterpay" src="images/afterpay-lockup-blackonwhite.svg"
+                            alt="Afterpay"></span>
+                    <a href="#" data-dialog-link="" id="mydialog-btn" data-dialog-addclass="dialog-afterpay"
+                        class="afterpay_help">?</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Side container -->
+    <div class="side-container" id="sidie">
+        <div id="header">Item added to Cart</div>
+        <div class="cart-grid">
+            <div><img id="grid-image" src="images/Zip-Shep-Shirt.jpg" alt=""></div>
+            <div class="grid-info">
+                <h2 id="title2">Dreamcloth Color-Blocked Half-Zip Shep Shirt</h2>
+                <p id="price">$138.00</p>
+                <p class="aa">Deep Bay /S</p>
+                <p class="qty">Qty: <span id="quantity">1</span></p>
+                <p ><span>$</span><u id="qty">138.00</u></p>
+            </div>
+        </div>
+      
+
+        <div id="side-rectangle1"><a href="pages/cart.html">CHECKOUT</a></div>
+        <div id="side-rectangle2">CONTINUE SHOPPING</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="icon" href="../images/ecommerce_icon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="pic">
+            <a href="/index.html"><img src="../images/logo@2.6x.png"></a>
+        </div>
+        <ul>
+            <li><a href="#">NEW</a> </li>
+            <li><a href="#">MEN</a> </li>
+            <li><a href="#">WOMEN</a> </li>
+            <li><a href="#">BOYS</a> </li>
+            <li><a href="#">GIRLS</a> </li>
+            <li><a href="#">MORE SIZES</a> </li>
+            <li><a href="#">TIES</a> </li>
+            <li><a href="#">SALE</a> </li>
+            <li><a href="#">MORE</a> </li>
+            <li>
+                <div class="box">
+                    <input type="text" class="txt" placeholder="Type here">
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </li>
+            <li>
+                <button class="click" onclick="hide()">
+                    <img src="../images/nav-icon.svg">
+                    <put>(<pin id="bagie">3</pin>)</put>
+                </button>
+            </li>
+        </ul>
+    </div>
+         <!--  Main container -->
+    <div class="root">
+        <div class="container">
+            <div class="cart">
+
+                <!--  Left side of page -->
+                <div class="left" >
+                    <div class="top">
+                        <div class="grid-content1">ITEM</div>
+                        <div class="grid-content2">QUANTITY AND UNIT PRICE</div>
+                        <div class="grid-content3">DELIVERY/PICK UP</div>
+                        <div class="grid-content4">TOTAL PRICE</div>
+                    </div>
+                    <div class="down" id="removal">
+                        <div class="grid-content5">
+                            <div class="mini-grid">
+                                <div><img id="left-picture" src="../images/img-grid-1.jpg" alt=""></div>
+                                <div>
+                                    
+                                    <a href="../index.html"><div id="grid-title">Dreamcloth Color-Blocked Half-Zip Shep Shirt</div></a>
+                                    <div class="attire">
+                                        <div class="attire-properties"><strong>Style:</strong>2K001942</div>
+                                        <div class="attire-properties"><strong>Color:</strong>Deep Bay</div>
+                                        <div class="attire-properties"><strong>Size:</strong>S</div>
+                                    </div>
+                                    <div class="links">
+                                        <div class="link">Edit</div>
+                                        <div class="link">Move to Wishlist</div>
+                                        <div class="link" id="comot">Remove</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-content6">
+                            <div>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <p id="ppp">UNIT PRICE</p>
+                                <p id="unit-price">@ $ <span id="unites">138.00</span></p>
+                                
+                            </div>
+                            <div class="free">
+                                <input class="checkbox" type="checkbox"> <label for="">Free gift package?</label>
+                            </div>
+
+                        </div>
+                        <div class="grid-content7">
+                            <input class="radio-btn" type="radio"> <label for="">Ship to me</label>
+                            <p id="free">Free shipping!!</p>
+                            <input class="radio-btn" type="radio"> <label for="">In-Store Pickup</label><br>
+                            <input class="radio-btn" type="radio"> <label for="">Curbside Pickup</label>
+                        </div>
+                        <div class="grid-content8">$<span id="totalP">138.00</span></div>
+                        
+                    </div>
+                    
+                </div>
+
+               <!--  Right side of page -->
+                <div class="right">
+                    <div id="header">
+                        <h3 id="tit">Order Summary</h3>
+                        <p id="tit2"><span id="ti2">8</span> items</p>
+                       
+                    </div>
+                    
+                    <div class="right-container">
+                    <div class="line">
+                        <p class="in-line">Subtotal($)</p>
+                        <p class="in-line" id="subT">138.00</p>
+                    </div>
+
+                    <div class="line">
+                        <p class="in-line">Shipping & Handling ($):</p>
+                        <p class="in-line" id="shipment">14.00</p>
+                    </div>
+
+
+                    <div class="line">
+                        <p class="in-line">Sales Tax ($)</p>
+                        <p class="in-line">$0.00</p>
+                    </div>
+
+                    <div class="line">
+                        <p class="in-line">ESTIMATED TOTAL($)*</p>
+                        <p class="in-line" id="estT">138.00</p>
+                    </div>
+
+                    <!-- <p class="in-line">Afterpay is available for orders between $ 35.00 - $ 1000.00 <img src="/images/afterpay-lockup-blackonwhite.svg" alt=""> ?</p> -->
+
+                    
+                  
+
+                    <div class="btn-set1"><input type="text" id="prom"placeholder="Enter promo code">
+                        <button type="submit" id="app" onclick="apply()">Apply</button>
+                    </div>
+
+                    <div class="butn"><a href="payment.html"><button id="checkout">CHECKOUT</button></a></div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/payment.js"></script>
+    
+</body>
+
+</html>
