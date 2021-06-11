@@ -25,8 +25,17 @@ $('#comot').on('click', ()=>{
 function apply (){
     let apply = document.getElementById("prom").value;
     if (apply.length == 5){
-        $('#est').text(0)
         $('#estT').text((parseInt(localStorage.getItem('itemTotal')) + parseInt(localStorage.getItem('shipValue'))) /2)
+        $('#prom').val("")
     } 
     console.log("clicked");
 }
+
+$('#qty1').change(function(){
+    $('#ti2').text($(this).val());
+    $('#bagie').text($(this).val());
+    let bag = document.getElementById("ti2").innerHTML
+    let unitP = document.getElementById("subT").innerHTML
+    $('#estT').text((parseInt(bag*unitP) + parseInt(localStorage.getItem('shipValue'))) /2)
+
+})

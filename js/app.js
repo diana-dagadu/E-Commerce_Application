@@ -68,3 +68,4 @@ $('#rectangle2').on('click',()=>{
 // plus.addEventListener(()=>{
 //     console.log("Plus clicked");
 // })
+
