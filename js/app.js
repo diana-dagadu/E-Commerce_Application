@@ -36,6 +36,7 @@ $('#rectangle2').on('click',()=>{
     $('#sidie').slideDown('slow');
     $('#sidie').css('top', '70')
     $('#sidie').css('right', '10')
+    $('#overlay').css('display', 'block')
     let totalPrice = parseInt(unitPrice.innerHTML) * parseInt(quantity.innerHTML);
 
     // Setting to localStorage
