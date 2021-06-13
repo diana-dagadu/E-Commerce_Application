@@ -4,8 +4,10 @@ $(document).ready(function () {
     console.log(ship)
     
     $('#ti2').text(localStorage.getItem('itemQuantity'))
-    $('#bagie').text(localStorage.getItem('itemQuantity'))
+    $('#bagie').text(localStorage.getItem('itemQuantity')) 
     $('#estT').text(parseInt(localStorage.getItem('itemTotal')) + parseInt(ship))
+    let estim =(parseInt(localStorage.getItem('itemTotal')) + parseInt(ship))
+    localStorage.setItem('itemEst', estim)
     $('#totalP').text(localStorage.getItem('itemTotal'))
     $('#unites').text(localStorage.getItem('itemPrice'))
       
@@ -13,6 +15,7 @@ $(document).ready(function () {
 
 
 $('#comot').on('click', ()=>{
+    $('#checkout').prop('disabled', true)
     $('#removal').hide();
     $('#subT').text(0)
     $('#ti2').text(0)
@@ -20,6 +23,25 @@ $('#comot').on('click', ()=>{
     $('#estT').text(0)
     $('#totalP').text(0)
     $('#unites').text(0)
+
+
+    localStorage.setItem('itemQuantity', 0)
+    localStorage.setItem('itemQuantity', 0)
+    localStorage.setItem('itemPrice', 0)
+    localStorage.setItem('itemTotal', 0)
+})
+
+
+
+$('#qty1').change(function(){
+    $('#ti2').text($(this).val());
+    $('#bagie').text($(this).val());
+    let bag = document.getElementById("ti2").innerHTML
+    let unitP = document.getElementById("subT").innerHTML
+    let estimated = ((parseInt(bag*unitP) + parseInt(localStorage.getItem('shipValue'))))
+    $('#estT').text((parseInt(bag*unitP) + parseInt(localStorage.getItem('shipValue'))))
+    localStorage.setItem('itemTotal',  estimated)
+    localStorage.setItem('itemEst', estimated)
 })
 
 function apply (){
@@ -30,12 +52,3 @@ function apply (){
     } 
     console.log("clicked");
 }
-
-$('#qty1').change(function(){
-    $('#ti2').text($(this).val());
-    $('#bagie').text($(this).val());
-    let bag = document.getElementById("ti2").innerHTML
-    let unitP = document.getElementById("subT").innerHTML
-    $('#estT').text((parseInt(bag*unitP) + parseInt(localStorage.getItem('shipValue'))) /2)
-
-})

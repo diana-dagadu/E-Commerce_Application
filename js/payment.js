@@ -10,5 +10,6 @@ $(document).ready(function () {
      $('#qt').text(localStorage.getItem('itemQuantity'))
      $('#bagie').text(localStorage.getItem('itemQuantity'))
      $('#unittt').text(localStorage.getItem('itemPrice'))
-     $('#finalP').text(localStorage.getItem('itemTotal'))
+     $('#finalP').text(localStorage.getItem('itemEst'))
 })
+
